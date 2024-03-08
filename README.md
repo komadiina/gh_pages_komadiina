@@ -7,3 +7,6 @@ $ npm install # or pnpm install or yarn install
 $ json-server -p port_number .static/projects.json # 3000 is occupied by default
 $ npm run dev # or npm start
 ```
+
+## Preview
+![screencap](ss.png "Portfolio preview")
