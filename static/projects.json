@@ -1,0 +1,106 @@
+{
+    "projects": [
+        {
+            "banner": "../../static/pytcher-banner.png",
+            "title": "Pytcher",
+            "link": "https://github.com/komadiina/pitch_detection",
+            "keywords": [
+                "dsp",
+                "fft",
+                "scipy"
+            ],
+            "desc": "Detect a tone's pitch with the simple click of a button."
+        },
+        {
+            "banner": "../../static/simplenn-banner.png",
+            "title": "SimpleNN",
+            "link": "https://github.com/komadiina/simplenn",
+            "keywords": [
+                "neural network",
+                "pytorch"
+            ],
+            "desc": "Simple neural network wrapper, inspired by Pytorch Lightning."
+        },
+        {
+            "banner": "../../static/cavegen-banner.png",
+            "title": "CaveGen",
+            "link": "https://github.com/komadiina/cave_generation",
+            "keywords": [
+                "c++",
+                "procedural",
+                "dfs",
+                "thresholding"
+            ],
+            "desc": "A deep dive into cave generation algorithms (theoretical approach)."
+        },
+        {
+            "banner": "../../static/sysecure-banner.png",
+            "title": "Sysecure",
+            "link": "https://github.com/komadiina/securesys",
+            "keywords": [
+                "cryptography",
+                "rsa",
+                "aes",
+                "pkcs12",
+                "x509"
+            ],
+            "desc": "Secure-storage system implemented using the PyOpenSSL wrapper library."
+        },
+        {
+            "banner": "../../static/stationx64-banner.png",
+            "title": "Stationx64",
+            "link": "https://github.com/komadiina/x64_sim",
+            "keywords": [
+                "x64",
+                "isa",
+                "c++",
+                "boost"
+            ],
+            "desc": "University assignment which reproduces a minimal-but-functional x64 ISA."
+        },
+        {
+            "banner": "../../static/srthere-banner.png",
+            "title": "SRTHere",
+            "link": "https//github.com/komadiina/srt_translation",
+            "keywords": [
+                "srt",
+                "translation",
+                "api"
+            ],
+            "desc": "Since my dad doesn't understand english, I've improvised a simple solution."
+        },
+        {
+            "banner": "../../static/jsonsort-banner.png",
+            "title": "JSONSort",
+            "link": "https://github.com/komadiina/jsonsort",
+            "keywords": [
+                "json",
+                "sorting",
+                "python"
+            ],
+            "desc": "Straight-forward, sorts JSON entries alphabetically - quite useful for VS Code's messy user-settings JSON object."
+        },
+        {
+            "banner": "../../static/audiolizer-banner.png",
+            "title": "Audiolizer",
+            "link": "https://github.com/komadiina/audio_processing",
+            "keywords": [
+                "audio synthesis",
+                "waveform",
+                "dsp"
+            ],
+            "desc": "A delve-deep self-improvement project which incorporates a WAV manipulation and processing library."
+        },
+        {
+            "banner": "../../static/lolbegone-banner.png",
+            "title": "LOLBegone",
+            "link": "https://github.com/komadiina/antilol",
+            "keywords": [
+                "bot",
+                "lol",
+                "discord.py"
+            ],
+            "desc": "Calls out currently-active League of Legends players in your Discord server. A must-have."
+        }
+    ]
+}

@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    color: #4f4e4e;
+    
+    @apply
+    opacity-100
+    transition-opacity
+    duration-1000
+    max-w-screen-xl
+    mx-auto;
+}
+
+
+body {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: #FBFBF2;
+    
+    @apply pb-8;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    
+    letter-spacing: 0.1rem;
+    background: rgba(231, 231, 222, 0.6);
+    border: 1.5px solid rgba(231, 231, 222, 1);
+    @apply px-1 rounded-md;
+}
+
+/* navbar styling */
+.navbar-container {
+    background-color: #fbfbf2;
+    align-items: center;
+    justify-content: center;
+    
+    @apply
+    grid my-4 pt-5 pb-10;
+}
+
+.navbar-container h1 {
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+}
+
+.navbar-container .routes {
+    @apply py-3 flex flex-grow flex-row justify-around;
+}
+
+a {
+    @apply font-light subpixel-antialiased;
+}
+
+/* /about & / (home) main content container */
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(25vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-animation {
+    animation: fade-in-up 1s ease-out forwards;    
+}
+
+.main-container {
+    @apply p-4 grid grid-flow-row grid-cols-1 md:grid-cols-2;
+}
+
+.image-description {
+    position: -webkit-sticky;
+    position: sticky;
+    max-height: 100vh;
+    /* overflow: auto; */
+    top: 0;
+}
+
+.image-description .my-image {
+    object-position: 50% 25%;    
+    @apply rounded-full size-60 object-cover mx-auto my-10;
+}
+
+.contact-info .icon {
+    @apply mx-4 my-2 py-1;    
+    transform: scale(2);
+}
+
+
+/* /projects page styling */
+.loading-text {
+    @apply italic text-2xl text-slate-700 p-4;
+}
+
+.project-cards-group {
+    @apply
+    px-4
+    grid grid-flow-row grid-cols-1
+    gap-10 justify-around 
+    md:grid-cols-2
+    lg:grid-cols-2
+    xl:grid-cols-3;
+}
+
+.project-cards-group img {    
+    aspect-ratio: 16/7;
+    object-fit: cover;
+    
+    width: 100vh;
+    filter: grayscale();
+        
+    @apply 
+    py-4;
+}
+
+.title-container {
+    letter-spacing: 0.25rem;
+    
+    @apply
+    text-4xl pb-4;
+}
+
+.project-description {
+    @apply text-justify;
+}
+
+.project-keywords {
+    @apply relative m-auto pt-4 pb-4;
+}
+
+.project-tag-container {
+    display: inline-block;
+    border-color: #847577;
+    border-width: 1px;
+    font-style: oblique;
+    letter-spacing: 0.1rem;
+    
+    background-color: rgba(231, 231, 222, 0.33);
+    
+    @apply pl-1 pr-1 mr-2 mb-1 rounded-lg text-sm;
+}
+
+.project-tag-element {
+    padding: 2px 0 2px 0;
+}
+
+.project-banner img {
+    transition-duration: 500ms;
+    -webkit-filter: blur(1.25px);
+    filter: blur(1.25px) grayscale();
+}
+
+.project-banner img:hover {
+    transition-duration: 500ms;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+
+.repo-link {
+    display: inline-block;
+    border: 1px solid #212121;
+    background-color: rgba(231, 231, 222, 0.33);
+    
+    @apply
+    rounded-lg p-2;
+}
+
+p {
+    @apply text-slate-600 text-base subpixel-antialiased;  
+}
+
+.text-group {
+    @apply subpixel-antialiased;
+}
+
+.text-group .tech-stack li {
+    @apply indent-4;
+}
+
+.about-second-column {
+    position: sticky;
+    translate: 50% 50%;
+}
+
+
+.home-text-block {
+    display: inline;
+    @apply grid grid-flow-row grid-cols-1 justify-around m-auto;
+    @apply translate-y-1/2 md:translate-x-1/2;
+    height: 75vh;
+}
+
+.hidden-element {
+    opacity: 0%;
+    filter: blur(10px);
+    transition: 1s all;
+}
+
+.show-element {
+    opacity: 100%;
+    filter: blur(0px);
+}
+
+.code-block {
+    width: 100%;    
+    @apply rounded-xl;
+}
+.code-block p {
+    text-align: left;
+    display: block;
+    @apply text-sm p-4;
+}
+
+.code-block v1 {
+    @apply text-orange-400;
+}
+.code-block v2 {
+    @apply text-stone-500;
+}
+
+.code-block val {
+    @apply text-slate-500;
+}
+
+
+t {
+    @apply ml-4;
+}
